@@ -27,7 +27,7 @@ jobs:
 
       - name: Extract Convertiora
         run: |
-          unzip -qo Convertiora-UI-v1.1.zip
+          unzip -qo Convertiora-UI-v1.2.zip
           "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" "build-tools;35.0.0"
       - name: Build Android APK
         run: gradle --no-daemon :app:assembleDebug
